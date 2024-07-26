@@ -24,6 +24,13 @@ $(call inherit-product, device/motorola/hanoip/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+SAKURA_BUILD_TYPE := gapps
+TARGET_EXCLUDES_AUDIOFX := true
+SAKURA_MAINTAINER := Anoosragh
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_OFFICIAL := true
+WITH_GMS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hanoip
 PRODUCT_DEVICE := hanoip
